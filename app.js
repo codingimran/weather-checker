@@ -45,7 +45,7 @@ const weatherDisplay = (data) => {
 // default dhaka call
 const weather2 = () => {
   fetch(
-    "http://api.openweathermap.org/data/2.5/weather?q=Dhaka&units=metric&APPID=7155b272f7a80a78d1951ab8c9916a52"
+    "https://api.openweathermap.org/data/2.5/weather?q=Dhaka&units=metric&APPID=7155b272f7a80a78d1951ab8c9916a52"
   )
     .then((res) => res.json())
     .then((data) => weatherDisplay(data))
